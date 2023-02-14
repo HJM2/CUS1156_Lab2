@@ -1,5 +1,9 @@
+// Hassan Mousa
+// CUS1156_lab2
+// 02/14/2023
+// Software Design Methods
 import java.util.ArrayList;
-
+import java.util.HashSet;
 public class UniqueWords
 {
    /**
@@ -9,15 +13,20 @@ public class UniqueWords
    */
    public static int countUnique(ArrayList<String> list)
    {
-	  int count = 0;
-	  
-      for (int i = 0; i < list.size(); i++)
-      {		 for (int j = 0; j < list.size(); j++)
-		 {
-			
-		 }
-      }
-	  return count;
+	   
+
+	   {
+	   	  int count = 0;
+	   	  HashSet uniqueList = new HashSet();
+	   	  
+	         for (int i = 0; i < list.size(); i++)
+	         {		
+	         System.out.println(list.get(i));
+	       	  uniqueList.add(list.get(i));
+	       	  count = uniqueList.size();
+	         }
+	   	  return count;
+	      }
    }
 
    public static void main(String[] args)
